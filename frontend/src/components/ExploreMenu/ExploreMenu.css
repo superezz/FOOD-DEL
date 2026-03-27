@@ -5,12 +5,13 @@
 }
 .explore-menu h1{
   color: #262626;
-  font-weight: 500px;
+  font-weight: 500;
 
 }
 .explore-menu-text{
   max-width: 60%;
-  columns: #808080;
+  color: #808080;
+  /* columns: #808080; */
 }
 .explore-menu-list{
   display: flex;
@@ -19,7 +20,9 @@
   gap: 30px;
   text-align: center;
   margin: 20px 0px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  /* overflow-x: scroll; */
+  scroll-behavior: smooth;
 }
 .explore-menu-list::-webkit-scrollbar{
   display: none;
@@ -44,15 +47,32 @@
   border: none;
 }
 
-/* ExploreMenu.css */
-/* .explore-menu {
+.explore-menu-list-item img.active{
+  outline: 4px solid tomato;
+  outline-offset: 4px;   /* creates that clean gap */
+  transform: scale(1.05);
+}
+/* .explore-menu-list-item img.active{
+  border: 4px solid tomato;
+  padding: 4px;
+  background-color: white;
+  box-sizing: border-box;
+  transform: scale(1.05);
+} */
+
+.explore-menu-list-item img {
+  display: block;
+}
+
+/* ExploreMenu.css
+.explore-menu {
   border: 2px solid red;
 }
 
 .header {
   height: 60vh; /* or smaller */
-}
+/* } */
 
-.explore-menu {
+/* .explore-menu {
   margin-top: 20px;
-} */
+/* } */  
